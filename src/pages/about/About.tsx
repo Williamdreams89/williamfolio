@@ -1,14 +1,16 @@
 import {Paper, Container, createStyles} from "@mantine/core"
 import { HeaderComponent } from "../../components/Header"
+import Description from "./Description"
 
 const useStyles = createStyles((theme)=>({}))
 const About = () => {
     const {theme, classes} = useStyles()
   return (
     <Paper>
-        <Container style={{}}>
+        <div style={{width:'75vw', margin:'auto'}}>
             <HeaderComponent />
-        </Container>
+            <Description />
+        </div>
     </Paper>
   )
 }

@@ -9,9 +9,8 @@ const useStyle = createStyles((theme)=>({
   container:{
     backgroundColor: theme.colorScheme === 'light'? 'rgba(250, 250, 250, 1)':'',
     [theme.fn.largerThan('sm')]:{
-      width:'70vw',
+      width:'90vw',
       margin:'auto',
-      height:'100%',
     }
   }
 }))
@@ -32,8 +31,11 @@ const App = () => {
     <>
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
+          <Paper w={'100vw'}>
+            <div className={classes.container}>
               <About />
-              <div style={{height:300}}></div>
+            </div>
+          </Paper>
         </MantineProvider>
       </ColorSchemeProvider>
     </>
