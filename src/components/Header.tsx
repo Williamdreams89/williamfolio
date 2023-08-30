@@ -101,6 +101,11 @@ const useStyles = createStyles((theme) => ({
     alignItems: 'center'
 
 },
+profileImage:{
+  borderRadius:'100%',
+  width:'4rem',
+  height:'4rem',
+}
 }));
 
 
@@ -135,7 +140,7 @@ export function HeaderComponent() {
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
         {/* <Avatar /> */}
-        <Image src={'/images/sarah2.png'} width={'4rem'} height={'4rem'} />
+        <img src={'/images/sarah2.png'} className={classes.profileImage} />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
