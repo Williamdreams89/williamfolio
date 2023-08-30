@@ -3,7 +3,10 @@ import { HeaderComponent } from './components/Header'
 import { ColorScheme, ColorSchemeProvider, Container, MantineProvider, Paper, createStyles } from '@mantine/core'
 import { useHotkeys, useLocalStorage } from '@mantine/hooks';
 import About from './pages/about/About';
-
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Achievements from './pages/contact/Contact';
+import Projects from './pages/projects/Projects';
+import Contact from './pages/contact/Contact';
 
 const useStyle = createStyles((theme)=>({
   container:{
@@ -33,7 +36,14 @@ const App = () => {
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
           <Paper w={'100vw'}>
             <div className={classes.container}>
-              <About />
+              <Router>
+                <Routes>
+                  <Route path='/' element={<About />} />
+                  <Route path='/achevements' element={<Achievements />} />
+                  <Route path='/projects' element={<Projects />} />
+                  <Route path='/contact' element={<Contact />} />
+                </Routes>
+              </Router>
             </div>
           </Paper>
         </MantineProvider>

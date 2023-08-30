@@ -107,7 +107,7 @@ const Description = () => {
                 </div>
             </div>
             <div className={classes.socialSmall}>
-                <a href=""><IconBrandFacebook />Follow on Facebook</a>
+                <a href="facebook.com/danquah.william"><IconBrandFacebook />Follow on Facebook</a>
                 <a href=""><IconBrandInstagram />Follow on Instagram</a>
                 <a href=""><IconBrandLinkedin />Follow on LinkedIn</a>
                 <a href=""><IconBrandTwitter />Follow on Twitter</a>
