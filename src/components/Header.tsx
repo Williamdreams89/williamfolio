@@ -23,7 +23,7 @@ const useStyles = createStyles((theme) => ({
   root: {
     position: 'relative',
     zIndex: 1,
-    border: 'none'
+    border: 'none',
   },
 
   dropdown: {
@@ -56,6 +56,7 @@ const useStyles = createStyles((theme) => ({
     display: 'flex',
     justifyContent: 'space-around',
     alignItems: 'center',
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
     [theme.fn.smallerThan('sm')]: {
       display: 'none',
     },
@@ -75,7 +76,7 @@ const useStyles = createStyles((theme) => ({
     textDecoration: 'none',
     color: theme.colorScheme === 'dark' ? theme.colors.dark[0] : theme.colors.gray[7],
     fontSize: theme.fontSizes.sm,
-    fontWeight: 500,
+    fontWeight: 800,
 
     '&:hover': {
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
@@ -103,8 +104,9 @@ const useStyles = createStyles((theme) => ({
 },
 profileImage:{
   borderRadius:'100%',
-  width:'4rem',
-  height:'4rem',
+  width:'3.5rem',
+  height:'3.5rem',
+  objectFit:'cover'
 }
 }));
 
@@ -140,7 +142,7 @@ export function HeaderComponent() {
     <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
       <Container className={classes.header}>
         {/* <Avatar /> */}
-        <img src={'/images/sarah2.png'} className={classes.profileImage} />
+        <img src={'/images/willie.jpg'} className={classes.profileImage} />
         <Group spacing={5} className={classes.links}>
           {items}
         </Group>
