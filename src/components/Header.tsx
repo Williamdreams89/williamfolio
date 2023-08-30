@@ -15,6 +15,8 @@ import { useDisclosure } from '@mantine/hooks';
 import ThemeModeToggler from './ThemeModeToggler';
 import { IconChevronDown } from "@tabler/icons-react";
 import { HoverCard, Menu, SimpleGrid } from "@mantine/core"
+import {Link} from 'react-router-dom'
+
 
 
 const HEADER_HEIGHT = rem(100);
@@ -113,10 +115,10 @@ profileImage:{
 
 
 const links = [
-    { link: "https://www.example.com", label: "About" },
-    { link: "https://www.openai.com", label: "Education" },
-    { link: "https://www.google1.com", label: "Projects" },
-    { link: "https://www.google2.com", label: "Contact" },
+    { link: "/", label: "About" },
+    { link: "/achievements/", label: "Achievements" },
+    { link: "/projects", label: "Projects" },
+    { link: "/contact", label: "Contact" },
 ];
 
 export function HeaderComponent() {
@@ -125,18 +127,18 @@ export function HeaderComponent() {
   const { classes, cx } = useStyles();
 
   const items = links.map((link) => (
-    <a
+    <Link
       key={link.label}
-      href={link.link}
+      to={link.link}
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
       onClick={(event) => {
-        event.preventDefault();
+        // event.preventDefault();
         setActive(link.link);
         close();
       }}
     >
       {link.label}
-    </a>
+    </Link>
   ));
 
   return (

@@ -1,9 +1,12 @@
 import React from 'react'
+import { HeaderComponent } from '../../components/Header'
 
-const Education = () => {
+const Achievements = () => {
   return (
-    <div>Education</div>
+    <div>
+        <HeaderComponent />
+    </div>
   )
 }
 
-export default Education
+export default Achievements
