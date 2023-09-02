@@ -1,8 +1,9 @@
 import React from 'react'
 import { HeaderComponent } from '../../components/Header'
-import { Container, Paper, createStyles } from '@mantine/core';
+import {  Paper, createStyles } from '@mantine/core';
 import { IconBrandAws, IconBrandDjango, IconBrandDocker, IconBrandReact, IconBrandVercel, IconFlame, IconLink } from '@tabler/icons-react';
 import FooterComponent from '../../components/FooterComponent';
+import { Link } from 'react-router-dom';
 
 
 const useStyles = createStyles(theme=>({
@@ -30,7 +31,7 @@ const useStyles = createStyles(theme=>({
     transition: '.7s ease-out',
     cursor: 'pointer',
 
-    '&:hover':{
+    '&:hover, &:nth-':{
       backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[0],
     }
   },
@@ -43,7 +44,8 @@ const useStyles = createStyles(theme=>({
       width:'80ch',
     },
     [theme.fn.smallerThan('md')]:{
-      margin: '3rem auto'
+      margin: '3rem auto',
+      marginTop: "0rem !important",
     }
   }, 
   projectLinks:{
@@ -56,16 +58,19 @@ const useStyles = createStyles(theme=>({
   }, 
   parentContainer:{
     marginBottom: '3rem'
+  }, 
+  projectLink:{
+
   }
 }))
 
 
 const projects = [
-  {title:"Taskmate", description:"A simple to-do application with password authentication to enhance user productivity", imgSrc:'logo.jpg',url:"", stackImgSrc:[{name:IconBrandDjango}]},
-  {title:"HIMSA UCC", description:"A seamless webapplication that automate manual repetitive processes such as announcements, access to reading materials.", imgSrc:'logo.jpg',url:"", stackImgSrc:[{name:IconBrandDjango},{name:IconBrandDocker}, {name:IconBrandReact}, {name:IconBrandVercel}]},
-  {title:"A RESTful Authentication App", description:"A dockerized password authentication RESTful api with postgres database deployed with docker, nginx, gunicorn and AWS Fargate.", imgSrc:'logo.jpg',url:"", stackImgSrc:[]},
-  {title:"A RESTful API Backend application", description:"A simple RESTful ecommerce web application", imgSrc:'logo.jpg',url:"", stackImgSrc:[{name:IconBrandDocker}]},
-  {title:"Church Management system", description:"A seamless full-stack web application build with DRF and React", imgSrc:'logo.jpg',url:"", stackImgSrc:[]},
+  {title:"Taskmate", description:"A simple to-do application with password authentication to enhance user productivity", imgSrc:'logo.jpg',url:"", githubUrl:"", stackImgSrc:[{name:IconBrandDjango}]},
+  {title:"HIMSA UCC", description:"A seamless webapplication that automate manual repetitive processes such as announcements, access to reading materials.", imgSrc:'logo.jpg',url:"", githubUrl:"", stackImgSrc:[{name:IconBrandDjango},{name:IconBrandDocker}, {name:IconBrandReact}, {name:IconBrandVercel}]},
+  {title:"A RESTful Authentication App", description:"A dockerized password authentication RESTful api with postgres database deployed with docker, nginx, gunicorn and AWS Fargate.", imgSrc:'logo.jpg',url:"", githubUrl:"", stackImgSrc:[]},
+  {title:"A RESTful API Backend application", description:"A simple RESTful ecommerce web application", imgSrc:'logo.jpg',url:"", githubUrl:"", stackImgSrc:[{name:IconBrandDocker}]},
+  {title:"Church Management System", description:"A seamless full-stack web application build with DRF and React", imgSrc:'logo.jpg',url:"", githubUrl:"", stackImgSrc:[]},
 ]
 
 const Projects = () => {
@@ -84,8 +89,8 @@ const Projects = () => {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className={classes.projectLinks}>
-              <span style={{display: 'flex', gap:'1rem'}}><IconLink />github.com</span>
-              <IconFlame />
+              <Link to={project.githubUrl}><span style={{display: 'flex', gap:'1rem'}}><IconLink />github.com</span></Link>
+              <Link to={project.url}><IconFlame /></Link>
               </div>
             </div>))}
         </main>

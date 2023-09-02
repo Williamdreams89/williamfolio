@@ -133,7 +133,6 @@ export function HeaderComponent() {
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
       onClick={() => {
         setActive(link.link);
-        alert('clicked')
         close();
       }}
     >
