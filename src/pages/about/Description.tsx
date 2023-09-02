@@ -1,5 +1,6 @@
 import { createStyles } from "@mantine/core"
 import { IconBrandFacebook, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandTwitter, IconMailCheck } from "@tabler/icons-react"
+import { Link } from "react-router-dom"
 
 const useStyles = createStyles(theme => ({
     main: {
@@ -83,12 +84,12 @@ const Description = () => {
                 <div className={classes.pictureSocial}>
                     <img src="/images/portrait.webp" alt="" className={classes.decriptImage} />
                     <div className={classes.socials}>
-                        <a href=""><IconBrandFacebook />Follow on Facebook</a>
-                        <a href=""><IconBrandInstagram />Follow on Instagram</a>
-                        <a href=""><IconBrandLinkedin />Follow on LinkedIn</a>
-                        <a href=""><IconBrandTwitter />Follow on Twitter</a>
-                        <a href=""><IconBrandGithub />Follow on Github</a>
-                        <a href=""><IconMailCheck />williamdreams@outlook.com</a>
+                        <Link to=""><IconBrandFacebook />Follow on Facebook</Link>
+                        <Link to=""><IconBrandInstagram />Follow on Instagram</Link>
+                        <Link to=""><IconBrandLinkedin />Follow on LinkedIn</Link>
+                        <Link to=""><IconBrandTwitter />Follow on Twitter</Link>
+                        <Link to=""><IconBrandGithub />Follow on Github</Link>
+                        <Link to=""><IconMailCheck />williamdreams@outlook.com</Link>
                     </div>
                 </div>
                 <div>
