@@ -25,7 +25,11 @@ const useStyles = createStyles(theme => ({
         transform: 'rotate(8deg)',
 
         [theme.fn.smallerThan('sm')]: {
-            width: '80vw'
+            width: '70vw',
+
+        }, 
+        [theme.fn.largerThan('md')]:{
+            height:'500px'
         }
     },
     socials: {
@@ -74,6 +78,14 @@ const useStyles = createStyles(theme => ({
                 marginTop: '4rem'
             }
         }
+    },
+    decriptMain:{
+        width: "70%", 
+
+        [theme.fn.smallerThan('md')]:{
+            width:"97%",
+            margin: "auto"
+        }
     }
 }))
 const Description = () => {
@@ -92,7 +104,7 @@ const Description = () => {
                         <Link to=""><IconMailCheck />williamdreams@outlook.com</Link>
                     </div>
                 </div>
-                <div>
+                <div className={classes.decriptMain}>
                     <h2>My name is Danquah Kwafo William. I hail from Kumasi, Ghana, where I bring to life Contemporary Web solutions</h2>
                     <p>
                         Once upon a time, I was a dreamer with my head in the stars. As a child, I had always been fascinated by the cosmos and the idea of exploring the great unknown as an astronaut. The idea of floating weightlessly in space, gazing down at our beautiful blue planet, and discovering the secrets of the universe filled me with an unquenchable curiosity and a burning desire to become an astronaut.                    </p>
