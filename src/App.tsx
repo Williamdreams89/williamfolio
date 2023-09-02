@@ -15,6 +15,11 @@ const useStyle = createStyles((theme)=>({
       width:'90vw',
       margin:'auto',
     }
+  }, 
+  main:{
+    "::-webkit-scrollbar":{
+      display: 'none'
+    }
   }
 }))
 const App = () => {
@@ -31,7 +36,7 @@ const App = () => {
   useHotkeys([['mod+J', () => toggleColorScheme()]]);
   const {theme, classes}=useStyle()
   return (
-    <>
+    <main className={classes.main}>
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
           <Paper w={'100vw'}>
@@ -48,7 +53,7 @@ const App = () => {
           </Paper>
         </MantineProvider>
       </ColorSchemeProvider>
-    </>
+    </main>
   )
 }
 

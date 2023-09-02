@@ -84,7 +84,7 @@ const useStyles = createStyles(theme => ({
 
         [theme.fn.smallerThan('md')]:{
             width:"97%",
-            margin: "auto"
+            margin: "auto",
         }
     }
 }))
@@ -96,12 +96,12 @@ const Description = () => {
                 <div className={classes.pictureSocial}>
                     <img src="/images/portrait.webp" alt="" className={classes.decriptImage} />
                     <div className={classes.socials}>
-                        <Link to=""><IconBrandFacebook />Follow on Facebook</Link>
-                        <Link to=""><IconBrandInstagram />Follow on Instagram</Link>
-                        <Link to=""><IconBrandLinkedin />Follow on LinkedIn</Link>
-                        <Link to=""><IconBrandTwitter />Follow on Twitter</Link>
-                        <Link to=""><IconBrandGithub />Follow on Github</Link>
-                        <Link to=""><IconMailCheck />williamdreams@outlook.com</Link>
+                        <a href="facebook.com/"><IconBrandFacebook />Follow on Facebook</a>
+                        <a href="instagram.com/"><IconBrandInstagram />Follow on Instagram</a>
+                        <a href="linkedin.com/"><IconBrandLinkedin />Follow on LinkedIn</a>
+                        <a href="twitter.com/"><IconBrandTwitter />Follow on Twitter</a>
+                        <a href="github.com/Williamdreams89"><IconBrandGithub />Follow on Github</a>
+                        <a href="williamdreams89@outlook.com"><IconMailCheck />williamdreams@outlook.com</a>
                     </div>
                 </div>
                 <div className={classes.decriptMain}>
@@ -121,7 +121,8 @@ const Description = () => {
                         As the years went by, my love for technology and my desire to continue learning led me down another path. I decided to pursue a career as a full-stack web developer. I enrolled in coding bootcamps, learned programming languages like JavaScript and Python, and began building websites and web applications from scratch.
                     </p>
                     <p>
-                        My journey from aspiring astronaut to Health Information Management professional to full-stack web developer has been a winding one, but each step has been fueled by a passion for knowledge and a desire to make a positive impact. While I may not have reached the stars as an astronaut, I've found fulfillment and purpose in the world of healthcare and technology, and I continue to reach for new heights in my career as a web developer, always with my eyes on the horizon of possibilities.                    </p>
+                        My journey from aspiring astronaut to Health Information Management professional to full-stack web developer has been a winding one, but each step has been fueled by a passion for knowledge and a desire to make a positive impact. While I may not have reached the stars as an astronaut, I've found fulfillment and purpose in the world of healthcare and technology, and I continue to reach for new heights in my career as a web developer, always with my eyes on the horizon of possibilities.                    
+                    </p>
 
                 </div>
             </div>
