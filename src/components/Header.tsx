@@ -13,8 +13,6 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import ThemeModeToggler from './ThemeModeToggler';
-import { IconChevronDown } from "@tabler/icons-react";
-import { HoverCard, Menu, SimpleGrid } from "@mantine/core"
 import {Link} from 'react-router-dom'
 
 

@@ -1,5 +1,5 @@
-import { createStyles } from "@mantine/core"
-import { IconBrandFacebook, IconBrandGithub, IconBrandInstagram, IconBrandLinkedin, IconBrandTwitter, IconMailCheck } from "@tabler/icons-react"
+import { Flex, createStyles } from "@mantine/core"
+import { IconBrandAws, IconBrandDjango, IconBrandDocker, IconBrandFacebook, IconBrandGit, IconBrandGithub, IconBrandInstagram, IconBrandJavascript, IconBrandLinkedin, IconBrandMysql, IconBrandReact, IconBrandTwitter, IconBrandTypescript, IconMailCheck } from "@tabler/icons-react"
 import { Link } from "react-router-dom"
 
 const useStyles = createStyles(theme => ({
@@ -62,7 +62,7 @@ const useStyles = createStyles(theme => ({
             }
         }
     },
-    pictureSocial: {
+    pictureSocialStacks: {
         display: 'flex',
         flexDirection: 'column',
         gap: '4rem',
@@ -76,7 +76,15 @@ const useStyles = createStyles(theme => ({
 
             '&:nth-of-type(6)': {
                 marginTop: '4rem'
-            }
+            },
+        },
+    },
+    stacks:{
+        display: 'flex',
+        gap: '1rem',
+
+        '& .stack':{
+            fontSize: "26px"
         }
     },
     decriptMain:{
@@ -93,8 +101,21 @@ const Description = () => {
     return (
         <>
             <div className={classes.main}>
-                <div className={classes.pictureSocial}>
+                <div className={classes.pictureSocialStacks}>
                     <img src="/images/portrait.webp" alt="" className={classes.decriptImage} />
+                    <div>
+                        <h4>My stacks:</h4>
+                        <div className={classes.stacks}>
+                        <IconBrandDjango className="stack" />
+                        <IconBrandReact  className="stack"/>
+                        <IconBrandJavascript className="stack" />
+                        <IconBrandTypescript className="stack" />
+                        <IconBrandGit  className="stack"/>
+                        <IconBrandAws  className="stack"/>
+                        <IconBrandDocker  className="stack"/>
+                        <IconBrandMysql  className="stack"/>
+                        </div>
+                    </div>
                     <div className={classes.socials}>
                         <a href="facebook.com/"><IconBrandFacebook />Follow on Facebook</a>
                         <a href="instagram.com/"><IconBrandInstagram />Follow on Instagram</a>

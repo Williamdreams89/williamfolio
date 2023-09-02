@@ -7,6 +7,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Projects from './pages/projects/Projects';
 import Contact from './pages/contact/Contact';
 import Achievements from './pages/achievements/Achievements';
+import AutoLoadingAnim from './routes/AutoLoadingAnim';
 
 const useStyle = createStyles((theme)=>({
   container:{
@@ -40,6 +41,7 @@ const App = () => {
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
           <Paper w={'100vw'}>
+            <AutoLoadingAnim />
             <div className={classes.container}>
               <Router>
                 <Routes>
