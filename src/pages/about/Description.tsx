@@ -35,7 +35,7 @@ const useStyles = createStyles(theme => ({
         [theme.fn.smallerThan('md')]: {
             display: 'none'
         },
-        
+
     },
     socialSmall: {
         display: 'flex',
@@ -43,9 +43,9 @@ const useStyles = createStyles(theme => ({
         gap: '1rem',
 
         [theme.fn.largerThan('md')]: {
-            display:'none'
+            display: 'none'
         },
-        'a':{
+        'a': {
             display: 'flex',
             gap: '2rem',
             alignItems: 'center',
@@ -94,16 +94,22 @@ const Description = () => {
                 <div>
                     <h2>My name is Danquah Kwafo William. I hail from Kumasi, Ghana, where I bring to life Contemporary Web solutions</h2>
                     <p>
-                        I’ve loved making things for as long as I can remember, and wrote my first program when I was 6 years old, just two weeks after my mom brought home the brand new Macintosh LC 550 that I taught myself to type on.
+                        Once upon a time, I was a dreamer with my head in the stars. As a child, I had always been fascinated by the cosmos and the idea of exploring the great unknown as an astronaut. The idea of floating weightlessly in space, gazing down at our beautiful blue planet, and discovering the secrets of the universe filled me with an unquenchable curiosity and a burning desire to become an astronaut.                    </p>
+                    <p>
+                        My journey towards that lofty goal began with countless hours of stargazing, reading books about space, and watching every documentary on astronauts and space missions that I could get my hands on. My room was adorned with posters of rockets, planets, and the iconic image of astronauts walking on the moon. I knew the names of all the Apollo missions by heart and could recite the life stories of famous astronauts like Neil Armstrong and Sally Ride.                    </p>
+                    <p>
+                        As I got older, my passion for space only grew stronger. I excelled in my science and math classes, knowing that these subjects were crucial for anyone aspiring to join the ranks of NASA. I participated in science fairs, built model rockets, and even attended space camp, where I got a taste of what it might be like to train as an astronaut.                    </p>
+                    <p>
+                        However, as I reached my late teens, I began to realize that the path to becoming an astronaut was incredibly competitive and required not only exceptional academic and physical fitness but also a healthy dose of luck. The odds of making it to space were slim, and I started to consider alternative career paths.
                     </p>
                     <p>
-                        The only thing I loved more than computers as a kid was space. When I was 8, I climbed the 40-foot oak tree at the back of our yard while wearing my older sister’s motorcycle helmet, counted down from three, and jumped — hoping the tree was tall enough that with just a bit of momentum I’d be able to get to orbit.
+                        Around the same time, I stumbled upon the field of Health Information Management (HIM). It piqued my interest because it combined my love for technology and my desire to contribute to the betterment of society. HIM professionals play a crucial role in managing and securing healthcare data, ensuring that patient records are accurate and confidential, and helping healthcare providers make informed decisions.                    </p>
+                    <p>
+                        As the years went by, my love for technology and my desire to continue learning led me down another path. I decided to pursue a career as a full-stack web developer. I enrolled in coding bootcamps, learned programming languages like JavaScript and Python, and began building websites and web applications from scratch.
                     </p>
                     <p>
-                        I spent the next few summers indoors working on a rocket design, while I recovered from the multiple surgeries it took to fix my badly broken legs. It took nine iterations, but when I was 15 I sent my dad’s Blackberry into orbit and was able to transmit a photo back down to our family computer from space.
-                    </p>
-                    <p>
-                        Today, I’m the founder of Planetaria, where we’re working on civilian space suits and manned shuttle kits you can assemble at home so that the next generation of kids really can make it to orbit — from the comfort of their own backyards.        </p>
+                        My journey from aspiring astronaut to Health Information Management professional to full-stack web developer has been a winding one, but each step has been fueled by a passion for knowledge and a desire to make a positive impact. While I may not have reached the stars as an astronaut, I've found fulfillment and purpose in the world of healthcare and technology, and I continue to reach for new heights in my career as a web developer, always with my eyes on the horizon of possibilities.                    </p>
+
                 </div>
             </div>
             <div className={classes.socialSmall}>

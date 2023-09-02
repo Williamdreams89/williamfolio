@@ -131,9 +131,9 @@ export function HeaderComponent() {
       key={link.label}
       to={link.link}
       className={cx(classes.link, { [classes.linkActive]: active === link.link })}
-      onClick={(event) => {
-        // event.preventDefault();
+      onClick={() => {
         setActive(link.link);
+        alert('clicked')
         close();
       }}
     >
