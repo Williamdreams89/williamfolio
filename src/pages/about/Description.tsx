@@ -15,6 +15,7 @@ const useStyles = createStyles(theme => ({
 
         [theme.fn.smallerThan('md')]: {
             flexDirection: 'column',
+            gap: "3rem"
         }
     },
     decriptImage: {
@@ -78,6 +79,10 @@ const useStyles = createStyles(theme => ({
                 marginTop: '4rem'
             },
         },
+
+        [theme.fn.smallerThan('md')]:{
+            gap: "1rem !important"
+        }
     },
     stacks:{
         display: 'flex',
