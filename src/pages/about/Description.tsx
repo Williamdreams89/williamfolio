@@ -1,6 +1,5 @@
 import { Flex, createStyles } from "@mantine/core"
-import { IconBrandAws, IconBrandDjango, IconBrandDocker, IconBrandFacebook, IconBrandGit, IconBrandGithub, IconBrandInstagram, IconBrandJavascript, IconBrandLinkedin, IconBrandMysql, IconBrandReact, IconBrandTwitter, IconBrandTypescript, IconMailCheck } from "@tabler/icons-react"
-import { Link } from "react-router-dom"
+import { IconBrandAws, IconBrandDjango, IconBrandDocker, IconBrandFacebook, IconBrandGit, IconBrandGithub, IconBrandInstagram, IconBrandJavascript, IconBrandLinkedin, IconBrandMysql, IconBrandPython, IconBrandReact, IconBrandTwitter, IconBrandTypescript, IconDatabase, IconMailCheck } from "@tabler/icons-react"
 
 const useStyles = createStyles(theme => ({
     main: {
@@ -109,16 +108,17 @@ const Description = () => {
                 <div className={classes.pictureSocialStacks}>
                     <img src="/images/portrait.webp" alt="" className={classes.decriptImage} />
                     <div>
-                        <h4>My stacks:</h4>
+                        <h4>Mostly Used:</h4>
                         <div className={classes.stacks}>
                         <IconBrandDjango className="stack" />
                         <IconBrandReact  className="stack"/>
                         <IconBrandJavascript className="stack" />
-                        <IconBrandTypescript className="stack" />
+                        <IconBrandPython className="stack" />
                         <IconBrandGit  className="stack"/>
                         <IconBrandAws  className="stack"/>
                         <IconBrandDocker  className="stack"/>
                         <IconBrandMysql  className="stack"/>
+                        <IconDatabase  className="stack"/>
                         </div>
                     </div>
                     <div className={classes.socials}>
@@ -137,8 +137,6 @@ const Description = () => {
                     <p>
                         My journey towards that lofty goal began with countless hours of stargazing, reading books about space, and watching every documentary on astronauts and space missions that I could get my hands on. My room was adorned with posters of rockets, planets, and the iconic image of astronauts walking on the moon. I knew the names of all the Apollo missions by heart and could recite the life stories of famous astronauts like Neil Armstrong and Sally Ride.                    </p>
                     <p>
-                        As I got older, my passion for space only grew stronger. I excelled in my science and math classes, knowing that these subjects were crucial for anyone aspiring to join the ranks of NASA. I participated in science fairs, built model rockets, and even attended space camp, where I got a taste of what it might be like to train as an astronaut.                    </p>
-                    <p>
                         However, as I reached my late teens, I began to realize that the path to becoming an astronaut was incredibly competitive and required not only exceptional academic and physical fitness but also a healthy dose of luck. The odds of making it to space were slim, and I started to consider alternative career paths.
                     </p>
                     <p>
@@ -153,12 +151,12 @@ const Description = () => {
                 </div>
             </div>
             <div className={classes.socialSmall}>
-                <a href="facebook.com/danquah.william"><IconBrandFacebook />Follow on Facebook</a>
-                <a href=""><IconBrandInstagram />Follow on Instagram</a>
-                <a href=""><IconBrandLinkedin />Follow on LinkedIn</a>
-                <a href=""><IconBrandTwitter />Follow on Twitter</a>
-                <a href=""><IconBrandGithub />Follow on Github</a>
-                <a href=""><IconMailCheck />williamdreams@outlook.com</a>
+                <a href="http://facebook.com/danquah.william" target="_blank"><IconBrandFacebook />Follow on Facebook</a>
+                <a href="http://instagram.com/"><IconBrandInstagram />Follow on Instagram</a>
+                <a href="http://linkedin.com/"><IconBrandLinkedin />Follow on LinkedIn</a>
+                <a href="http://twitter.com/"><IconBrandTwitter />Follow on Twitter</a>
+                <a href="http://github.com/Williamdreams89"><IconBrandGithub />Follow on Github</a>
+                <a href="williamdreams89@gmail.com"><IconMailCheck />williamdreams@outlook.com</a>
             </div>
         </>
     )
