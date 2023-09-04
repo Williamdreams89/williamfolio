@@ -41,7 +41,7 @@ const App = () => {
       <ColorSchemeProvider colorScheme={colorScheme} toggleColorScheme={toggleColorScheme}>
         <MantineProvider theme={{ colorScheme }} withGlobalStyles withNormalizeCSS>
           <Paper w={'100vw'}>
-            <AutoLoadingAnim />
+            {/* <AutoLoadingAnim /> */}
             <div className={classes.container}>
               <Router>
                 <Routes>
