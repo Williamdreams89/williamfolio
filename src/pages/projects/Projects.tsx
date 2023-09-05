@@ -21,7 +21,7 @@ const useStyles = createStyles(theme=>({
     objectFit: 'cover'
   }, 
   projectContainer:{
-    width:'90%',
+    width:'95%',
     height:'400px',
     padding: "20px",
     margin:'auto',
@@ -38,7 +38,7 @@ const useStyles = createStyles(theme=>({
   },
 
   leadText:{
-    width:'75vw',
+    width:'85vw',
     margin: 'auto',
     [theme.fn.largerThan('md')]:{
       margin: '3rem 2rem',
@@ -61,7 +61,11 @@ const useStyles = createStyles(theme=>({
   parentContainer:{
     marginBottom: '3rem !important',
     width: "75vw",
-    margin: 'auto'
+    margin: 'auto',
+
+    [theme.fn.smallerThan('md')]:{
+      width:'85vw',
+    }
   }, 
   projectLink:{
     color: theme.colorScheme=='dark'?'whitesmoke': 'black', 
