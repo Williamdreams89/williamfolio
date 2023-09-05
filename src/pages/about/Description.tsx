@@ -26,7 +26,7 @@ const useStyles = createStyles(theme => ({
         margin: 'auto',
 
         [theme.fn.smallerThan('sm')]: {
-            width: '70vw',
+            width: '80vw',
 
         }, 
         [theme.fn.largerThan('md')]:{
