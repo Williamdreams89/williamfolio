@@ -8,7 +8,7 @@ const About = () => {
     const {theme, classes} = useStyles()
   return (
     <Paper>
-        <div style={{width:'75vw', margin:'auto'}}>
+        <div style={{width:'85vw', margin:'auto'}}>
             <HeaderComponent />
             <Description />
             <FooterComponent />

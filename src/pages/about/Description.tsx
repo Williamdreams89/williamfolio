@@ -23,6 +23,7 @@ const useStyles = createStyles(theme => ({
         height: '400px',
         borderRadius: '2rem',
         transform: 'rotate(8deg)',
+        margin: 'auto',
 
         [theme.fn.smallerThan('sm')]: {
             width: '70vw',
