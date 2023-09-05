@@ -38,7 +38,8 @@ const useStyles = createStyles(theme=>({
   },
 
   leadText:{
-    width:'90vw',
+    width:'75vw',
+    margin: 'auto',
     [theme.fn.largerThan('md')]:{
       margin: '3rem 2rem',
       textAlign: 'left',
