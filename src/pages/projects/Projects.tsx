@@ -10,7 +10,7 @@ const useStyles = createStyles(theme=>({
   main:{
     display: 'grid',
     gridTemplateColumns: "repeat(auto-fit, minmax(300px, 2fr))",
-    margin: 'auto',
+    // margin: 'auto',
     gap: '2rem',
   }, 
   projectImage:{
@@ -64,7 +64,8 @@ const useStyles = createStyles(theme=>({
     margin: 'auto',
 
     [theme.fn.smallerThan('md')]:{
-      width:'85vw',
+      width:'95vw',
+      margin: 'auto'
     }
   }, 
   projectLink:{
