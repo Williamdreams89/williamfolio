@@ -30,9 +30,10 @@ const useStyles = createStyles(theme=>({
     flexDirection: 'column',
     transition: '.7s ease-out',
     cursor: 'pointer',
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[1],
 
     '&:hover':{
-      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[1],
+      backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[6] : theme.colors.gray[4],
     }
   },
 
