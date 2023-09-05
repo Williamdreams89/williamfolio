@@ -89,7 +89,12 @@ const useStyles = createStyles(theme => ({
         gap: '1rem',
 
         '& .stack':{
-            fontSize: "26px"
+            fontSize: "46px", 
+            cursor: 'pointer',
+
+            '&:hover':{
+                transform: 'scale(1)'
+            }
         }
     },
     decriptMain:{
