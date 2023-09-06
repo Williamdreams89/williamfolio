@@ -69,7 +69,7 @@ const useStyles = createStyles(theme=>({
     }
   }, 
   projectLink:{
-    color: theme.colorScheme=='dark'?'whitesmoke': 'black', 
+    color: theme.colorScheme==='dark'?'whitesmoke': 'black', 
     textDecoration: 'none',
 
     '&:nth-child(2)':{
