@@ -80,12 +80,13 @@ const FooterComponent = () => {
           {link.label}
         </a>
       ));
+      const date = new Date()
   return (
     <div className={classes.footerGroup}>
         <Group spacing={3} className={classes.links}>
           {items}
         </Group>
-        <p>2023 Danquah Kwafo William. All right reserved</p>
+        <p>&copy; {date.getFullYear()} Danquah Kwafo William. All right reserved</p>
     </div>
   )
 }
