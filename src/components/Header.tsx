@@ -13,7 +13,7 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import ThemeModeToggler from './ThemeModeToggler';
-import {Link} from 'react-router-dom'
+import {Link, NavLink} from 'react-router-dom'
 
 
 
@@ -124,18 +124,17 @@ export function HeaderComponent() {
   const [active, setActive] = useState(links[0].link);
   const { classes, cx } = useStyles();
 
-  const items = links.map((link) => (
-    <Link
+  
+
+  const items = links.map((link, index) => (
+    <NavLink
       key={link.label}
       to={link.link}
-      className={cx(classes.link, { [classes.linkActive]: active === link.link })}
-      onClick={() => {
-        setActive(link.link);
-        close();
-      }}
+      className={({isActive})=>`${isActive ? classes.linkActive: ""} ${classes.link}`}
+      
     >
       {link.label}
-    </Link>
+    </NavLink>
   ));
 
   return (
